@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 test
 <<<<<<< HEAD
 File edited on Windows
@@ -9,3 +10,6 @@ Another line is added
 test 2 line
 
 Now Iam going to save this
+=======
+This is a interim change
+>>>>>>> Stashed changes
