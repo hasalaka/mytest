@@ -1,0 +1,3 @@
+This file is only in b1
+No change is expected here
+
