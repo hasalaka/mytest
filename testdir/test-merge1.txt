@@ -1,8 +1,9 @@
 t this point, your project working directory is exactly the way 
 2.it was before you started working on issue #53, 
 3.and you can concentrate on your hotfix. This is an important point to remember: 
-4.when you switch branches <Changed>, Git resets your working directory to look like it did the last time you committed on that branch. It adds, 
+4.when you switch branches <Changed>, Git <b2 updated> resets your working directory to look like it did the last time you committed on that branch. It adds, 
 5.removes, and modifies files automatically to make sure your working copy is what the 
 5.1 New line added to middle
 6.branch looked like on your last commit to it
 6.1 New line added to bottom
+6.2 new line in b2
