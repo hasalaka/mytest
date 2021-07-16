@@ -43,10 +43,11 @@ jobs:
               ls ${{ github.workspace }}
               echo "🍏 This job's status is ${{ job.status }}."
 
-#      - id: files
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      
 
       - name: Get all files.  
-        uses: jitterbit/get-changed-files@v1
         run: |
           for changed_file in ${{ steps.files.outputs.all }}; do
             echo "Do something with this ${changed_file}."
