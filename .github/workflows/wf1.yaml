@@ -31,6 +31,15 @@ jobs:
         run: |
           echo secret ${{ secrets.MY_NAME }}
           echo ${{ secrets.SECRET_TOKEN }}
-          echo "Trick to echo GitHub Actions Secret:  "
-          echo ${{secrets.SECRET_TOKEN}} | sed 's/./& /g'
-
+          echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+          echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+          echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        run: |
+             echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+             echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+              ls ${{ github.workspace }}
+              echo "🍏 This job's status is ${{ job.status }}."
