@@ -43,7 +43,7 @@ jobs:
               ls ${{ github.workspace }}
               echo "🍏 This job's status is ${{ job.status }}."
 
-      - id: files
+#      - id: files
 
       - name: Get all files.  
         uses: jitterbit/get-changed-files@v1
